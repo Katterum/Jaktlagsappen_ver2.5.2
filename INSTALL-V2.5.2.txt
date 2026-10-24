@@ -1,0 +1,14 @@
+KATTERUMS JAKTLAG v2.5.2 - OBSERVATIONSSYNK
+1. Ersatt filerna i GitHub-repots rot med filerna i denna ZIP.
+2. Behall master-data-v250.json oforandrad.
+3. Vanta tills GitHub Pages visar den nya publiceringen och oppna sidan i webblasaren.
+4. Kontrollera att appen visar v2.5.2.
+5. Logga in som Erik och skapa en ny testobservation.
+6. Kontrollera att testobservationen finns i Supabase-tabellen observations.
+
+Andringar:
+- Observationer skickas direkt till Supabase efter sparning.
+- Resultatet lases tillbaka fran Supabase for verifiering.
+- Ett tydligt felmeddelande visas om skrivning eller verifiering misslyckas.
+- Reservkontroll fangar observationsvyer som inte anropar den centrala save-funktionen.
+- Ny service-worker-cache och cache-busting v=252.
